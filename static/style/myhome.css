@@ -12,7 +12,7 @@ input[type="submit"] {
 
 
   body {
-    background-image: url(one.jpg);
+    background-image: url(4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -47,21 +47,21 @@ input[type="submit"] {
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 45px;
     margin-bottom: 20px;
   }
 
   p {
-    font-size: 16px;
+    font-size: 20px;
     color: rgb(218, 213, 213);
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 30px;
     color: rgb(224, 221, 221);
   }
 
   h2 {
-    font-size: 25px;
+    font-size: 35px;
     color: rgb(218, 216, 216);
   }

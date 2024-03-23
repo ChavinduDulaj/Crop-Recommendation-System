@@ -1,5 +1,5 @@
 body {
-    background-image: url(prediction_back.jpg);
+    background-image: url(3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -10,7 +10,7 @@ body {
     margin: 0 auto;
     text-align: center;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.663);
     border-radius: 10px;
   }
 
@@ -34,7 +34,7 @@ body {
   }
 
   label {
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 20px;
     display: block;
   }

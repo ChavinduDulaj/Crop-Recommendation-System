@@ -1,12 +1,68 @@
 <html>
   <head>
     <link rel="stylesheet" href="{{url_for('static',filename='style/prdiction_css.css')}}">
+    <style>
+      .prediction-image {
+        width: 400px;  /* Set the desired width */
+        height: auto;  /* Maintain aspect ratio */
+        margin-left: 20px;  /* Add some space between the prediction text and the images */
+      }
+    </style>
   </head>
   <body>
-    <h4>According to your soil neutrients</h4>
-    <h4> You Should Grow -> </h4>
+    <h4>According to conditions best crop is-> </h4>
+    <h4></h4>
     <br>
     <br>
     <h4>{{prediction}}</h4>
+
+    <!-- Display image based on prediction -->
+    <div>
+      {% if prediction == 'Rice' %}
+        <img src="{{url_for('static', filename='images/rice.jpg')}}" alt="Rice" class="prediction-image">
+      {% elif prediction == 'Maize' %}
+        <img src="{{url_for('static', filename='images/maize.jpg')}}" alt="Maize" class="prediction-image">
+      {% elif prediction == 'Chickpea' %}
+        <img src="{{url_for('static', filename='images/chickpea.jpg')}}" alt="Chickpea" class="prediction-image">
+      {% elif prediction == 'Kidneybeans' %}
+        <img src="{{url_for('static', filename='images/kidneybeans.jpeg')}}" alt="Kidneybeans" class="prediction-image">
+      {% elif prediction == 'Pigeonpeas' %}
+        <img src="{{url_for('static', filename='images/pigeonpeas.jpeg')}}" alt="Pigeonpeas" class="prediction-image">
+      {% elif prediction == 'Mothbeans' %}
+        <img src="{{url_for('static', filename='images/mothbeans.jpeg')}}" alt="Mothbeans" class="prediction-image">
+      {% elif prediction == 'Mungbean' %}
+        <img src="{{url_for('static', filename='images/mungbean.jpeg')}}" alt="Mungbean" class="prediction-image">
+      {% elif prediction == 'Blackgram' %}
+        <img src="{{url_for('static', filename='images/black_gram.jpeg')}}" alt="Blackgram" class="prediction-image">
+      {% elif prediction == 'Lentil' %}
+        <img src="{{url_for('static', filename='images/lentil.jpeg')}}" alt="Lentil" class="prediction-image">
+      {% elif prediction == 'Pomegranate' %}
+        <img src="{{url_for('static', filename='images/pomegranate.jpeg')}}" alt="Pomegranate" class="prediction-image">
+      {% elif prediction == 'Banana' %}
+        <img src="{{url_for('static', filename='images/banana.jepg')}}" alt="Banana" class="prediction-image">
+      {% elif prediction == 'Mango' %}
+        <img src="{{url_for('static', filename='images/mango.jpeg')}}" alt="Mango" class="prediction-image">
+      {% elif prediction == 'Grapes' %}
+        <img src="{{url_for('static', filename='images/grapes.jpeg')}}" alt="Grapes" class="prediction-image">
+      {% elif prediction == 'Watermelon' %}
+        <img src="{{url_for('static', filename='images/watermelon.jpeg')}}" alt="Watermelon" class="prediction-image">
+      {% elif prediction == 'Muskmelon' %}
+        <img src="{{url_for('static', filename='images/muskmelon.jpeg')}}" alt="Muskmelon" class="prediction-image">
+      {% elif prediction == 'Apple' %}
+        <img src="{{url_for('static', filename='images/apple.jpeg')}}" alt="Apple" class="prediction-image">
+      {% elif prediction == 'Orange' %}
+        <img src="{{url_for('static', filename='images/orange.jpeg')}}" alt="Orange" class="prediction-image">
+      {% elif prediction == 'Papaya' %}
+        <img src="{{url_for('static', filename='images/papaya.jpeg')}}" alt="Papaya" class="prediction-image">
+      {% elif prediction == 'Coconut' %}
+        <img src="{{url_for('static', filename='images/coconut.jpeg')}}" alt="Coconut" class="prediction-image">
+      {% elif prediction == 'Cotton' %}
+        <img src="{{url_for('static', filename='images/cotton.jpeg')}}" alt="Cotton" class="prediction-image">
+      {% elif prediction == 'Jute' %}
+        <img src="{{url_for('static', filename='images/jute.jpeg')}}" alt="Jute" class="prediction-image">
+      {% elif prediction == 'Coffee' %}
+        <img src="{{url_for('static', filename='images/coffee.jpeg')}}" alt="Coffee" class="prediction-image">
+      {% endif %}
+    </div>
   </body>
 </html>
